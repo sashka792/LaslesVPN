@@ -240,11 +240,15 @@
   text-align: center;
   flex-wrap: wrap;
   justify-self: baseline;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .plan__item:hover {
   border: 2px solid #F53838;
 }
+
 .plan__item-img {
   padding: 80px 91px 0px;
 }
@@ -311,6 +315,7 @@
 }
 
 /* Network */
+
 .network {
   margin-top: 155px;
 }
@@ -327,21 +332,109 @@
 
 .network-partners {
   display: flex;
-}
-
-.network img {
-  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 55px;
 }
 
 /* Testimonials */
+
+.testimonials {
+  margin-top: 80px;
+}
+
+.testimonials__title {
+  width: 450px;
+  margin: 0 auto 25px;
+}
+
+.testimonials__subtitle {
+  width: 550px;
+  margin: 0 auto 60px;
+}
 
 .testimonials__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.testimonial__item {
+  padding: 30px;
+  border: 2px solid #DDDDDD;
+  border-radius: 10px;
+}
+
+.testimonial__item:hover {
+  border: 2px solid #F53838;
+}
+
+.tetimonial__client-info {
+  display: flex;
+}
+
+.testimonial__client-avatar {
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.tetimonial__client-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #0B132A;
+  line-height: 30px;
+}
+
+.tetimonial__client-location {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  color: #4F5665;
+}
+
+.tetimonial__client-rating {
+  margin-left: auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #0B132A;
+}
+
+.tetimonial__client-comment {
+  margin: 20px 0 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #0B132A;
+}
+
+/* Subscribe */
+.subscribe {
+  position: relative;
+  z-index: 1;
+  justify-content: space-between;
+  display: flex;
+  background: #FFFFFF;
+  box-shadow: 0px 27px 114px -84px rgba(13, 16, 37, 0.6);
+  border-radius: 10px;
+  padding: 59px 70px;
+  margin-top: 65px;
+  margin-bottom: -100px;
+}
+
+.subscribe__text {
+  width: 380px;
+}
+
+.subscribe__button {
+  align-self: center;
+}
+
 /* Footer */
 
 .page-footer {
   display: flex;
+  background: #F8F8F8;
+  padding: 180px 0 100px;
 }
