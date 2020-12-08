@@ -7,154 +7,186 @@
   <title>LaslesVPN</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
+  <div class="container">
   <header class="header">
-    <a href="">
-      <img src="img/logo.svg" alt="Logo LaslesVPN">
-    </a>
-    <nav class="navigation">
-      <ul class="navigation__list menu-list">
-        <li class="menu-list__item"><a class="menu-list__link" href="">About</a></li>
-        <li class="menu-list__item"><a class="menu-list__link" href="">Features</a></li>
-        <li class="menu-list__item"><a class="menu-list__link" href="">Pricing</a></li>
-        <li class="menu-list__item"><a class="menu-list__link" href="">Testimonials</a></li>
-        <li class="menu-list__item"><a class="menu-list__link" href="">Help</a></li>
-      </ul>
+      <a href="#">
+        <img src="img/logo.svg" alt="Logo LaslesVPN">
+      </a>
+      <nav class="navigation">
+        <ul class="navigation__list menu-list">
+          <li class="menu-list__item"><a class="menu-list__link" href="">About</a></li>
+          <li class="menu-list__item"><a class="menu-list__link" href="">Features</a></li>
+          <li class="menu-list__item"><a class="menu-list__link" href="">Pricing</a></li>
+          <li class="menu-list__item"><a class="menu-list__link" href="">Testimonials</a></li>
+          <li class="menu-list__item"><a class="menu-list__link" href="">Help</a></li>
+        </ul>
+      </nav>
       <div class="nav-buttons">
-        <button>Sign In</button>
-        <button>Sign Up</button>
+        <button class="login">Sign In</button>
+        <button class="logout">Sign Up</button>
       </div>
-    </nav>
+    </header>
+  </div>
+  <!-- /.container -->
 
-  </header>
+
   <main>
     <section class="offer">
-      <div class="offer-content">
-        <h1 class="">
-          Want anything to be easy <b>with LaslesVPN.</b>
-        </h1>
-        <p class="">
-          Provide a network for all your needs with ease
-          and fun using <b>LaslesVPN</b> discover interesting features from us.
-        </p>
-        <button class="">Get Started</button>
+      <div class="container d-flex">
+        <div class="offer-content">
+          <h1 class="offer__title">
+            Want anything to be easy <b>with LaslesVPN.</b>
+          </h1>
+          <p class="offer__subtitle">
+            Provide a network for all your needs with ease
+            and fun using <b>LaslesVPN</b> discover interesting features from us.
+          </p>
+          <button class="offer__button button">Get Started</button>
+        </div>
+        <div class="offer-img">
+          <img src="img/img-1.svg" alt="LaslesVPN user">
+        </div>
       </div>
-      <div class="offer-img">
-        <img src="img/img-1.svg" alt="LaslesVPN user">
-      </div>
+      <!-- /.container -->
     </section>
 
     <section class="statistic">
-      <div class="statistic__item">
-        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 11.3493C13.4548 11.3493 14.3705 10.97 15.0456 10.2949C15.7207
-            9.61975 16.1 8.70407 16.1 7.74929C16.1 6.79451 15.7207 5.87884 15.0456 5.20371C14.3705 4.52858 13.4548 4.14929 12.5 4.14929C11.5452 4.14929 10.6296
-            4.52858 9.95442 5.20371C9.27929 5.87884 8.90001 6.79451 8.90001 7.74929C8.90001 8.70407 9.27929 9.61975 9.95442 10.2949C10.6296 10.97 11.5452 11.3493 12.5 11.3493ZM7.39866
-            22.1493C5.57686 22.1493 4.04225 20.6179 4.73942 18.9347C5.16156 17.9156 5.7803 16.9896 6.56031 16.2096C7.34032 15.4296 8.26633 14.8108 9.28547 14.3887C10.3046 13.9666 11.3969 13.7493
-            12.5 13.7493C13.6031 13.7493 14.6954 13.9666 15.7145 14.3887C16.7337 14.8108 17.6597 15.4296 18.4397 16.2096C19.2197 16.9896 19.8385 17.9156 20.2606 18.9347C20.9578 20.6179
-            19.4232 22.1493 17.6014 22.1493H7.39866Z" fill="#F53838" />
-        </svg>
-        <div class="text">
-          <b>90+</b>
-          <span>Users</span>
-        </div>
-      </div>
-      <div class="statistic__item">
-        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M19 9.54932C19 8.63006 18.8189 7.71981 18.4672 6.87053C18.1154 6.02125 17.5998 5.24958 16.9497 4.59957C16.2997 3.94956 15.5281 3.43394 14.6788 3.08216C13.8295 2.73038 12.9193 2.54932 12 2.54932C11.0807 2.54932 10.1705 2.73038 9.32122 3.08216C8.47194 3.43394 7.70026 3.94956 7.05025 4.59957C6.40024 5.24958 5.88463 6.02125 5.53284 6.87053C5.18106 7.71981 5 8.63006 5 9.54932C5 10.9363 5.41 12.2263 6.105 13.3143H6.097C8.457 17.0093 12 22.5493 12 22.5493L17.903 13.3143H17.896C18.6164 12.1907 18.9995 10.8841 19 9.54932ZM12 12.5493C11.2044 12.5493 10.4413 12.2332 9.87868 11.6706C9.31607 11.108 9 10.345 9 9.54932C9 8.75367 9.31607 7.99061 9.87868 7.428C10.4413 6.86539 11.2044 6.54932 12 6.54932C12.7956 6.54932 13.5587 6.86539 14.1213 7.428C14.6839 7.99061 15 8.75367 15 9.54932C15 10.345 14.6839 11.108 14.1213 11.6706C13.5587 12.2332 12.7956 12.5493 12 12.5493Z" fill="#F53838"/>
-        </svg>
+      <div class="container">
+        <div class="statistic__wrapper d-flex">
+          <div class="statistic__item">
+            <svg class="statistic__item-icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 11.3493C13.4548 11.3493 14.3705 10.97 15.0456 10.2949C15.7207
+                9.61975 16.1 8.70407 16.1 7.74929C16.1 6.79451 15.7207 5.87884 15.0456 5.20371C14.3705 4.52858 13.4548 4.14929 12.5 4.14929C11.5452 4.14929 10.6296
+                4.52858 9.95442 5.20371C9.27929 5.87884 8.90001 6.79451 8.90001 7.74929C8.90001 8.70407 9.27929 9.61975 9.95442 10.2949C10.6296 10.97 11.5452 11.3493 12.5 11.3493ZM7.39866
+                22.1493C5.57686 22.1493 4.04225 20.6179 4.73942 18.9347C5.16156 17.9156 5.7803 16.9896 6.56031 16.2096C7.34032 15.4296 8.26633 14.8108 9.28547 14.3887C10.3046 13.9666 11.3969 13.7493
+                12.5 13.7493C13.6031 13.7493 14.6954 13.9666 15.7145 14.3887C16.7337 14.8108 17.6597 15.4296 18.4397 16.2096C19.2197 16.9896 19.8385 17.9156 20.2606 18.9347C20.9578 20.6179
+                19.4232 22.1493 17.6014 22.1493H7.39866Z" fill="#F53838" />
+            </svg>
+            <div class="statistic__text">
+              <b class="statistic__text-num">90+</b>
+              <span class="statistic__text-title">Users</span>
+            </div>
+          </div>
+          <!-- /.statistic__item -->
+          <div class="statistic__item">
+            <svg class="statistic__item-icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19 9.54932C19 8.63006 18.8189 7.71981 18.4672 6.87053C18.1154 6.02125 17.5998 5.24958 16.9497 4.59957C16.2997 3.94956 15.5281 3.43394 14.6788 3.08216C13.8295 2.73038 12.9193 2.54932 12 2.54932C11.0807 2.54932 10.1705 2.73038 9.32122 3.08216C8.47194 3.43394 7.70026 3.94956 7.05025 4.59957C6.40024 5.24958 5.88463 6.02125 5.53284 6.87053C5.18106 7.71981 5 8.63006 5 9.54932C5 10.9363 5.41 12.2263 6.105 13.3143H6.097C8.457 17.0093 12 22.5493 12 22.5493L17.903 13.3143H17.896C18.6164 12.1907 18.9995 10.8841 19 9.54932ZM12 12.5493C11.2044 12.5493 10.4413 12.2332 9.87868 11.6706C9.31607 11.108 9 10.345 9 9.54932C9 8.75367 9.31607 7.99061 9.87868 7.428C10.4413 6.86539 11.2044 6.54932 12 6.54932C12.7956 6.54932 13.5587 6.86539 14.1213 7.428C14.6839 7.99061 15 8.75367 15 9.54932C15 10.345 14.6839 11.108 14.1213 11.6706C13.5587 12.2332 12.7956 12.5493 12 12.5493Z"
+                fill="#F53838" />
+            </svg>
 
-        <div class="text">
-          <b>30+</b>
-          <span>Locations</span>
+            <div class="statistic__text">
+              <b class="statistic__text-num">30+</b>
+              <span class="statistic__text-title">Locations</span>
+            </div>
+          </div>
+          <!-- /.statistic__item -->
+          <div class="statistic__item">
+            <svg class="statistic__item-icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.5 3.54932H4.5C3.96957 3.54932 3.46086 3.76003 3.08579 4.1351C2.71071 4.51018 2.5 5.01888 2.5 5.54932V9.54932C2.5 10.0797 2.71071 10.5885 3.08579 10.9635C3.46086 11.3386 3.96957 11.5493 4.5 11.5493H20.5C21.0304 11.5493 21.5391 11.3386 21.9142 10.9635C22.2893 10.5885 22.5 10.0797 22.5 9.54932V5.54932C22.5 5.01888 22.2893 4.51018 21.9142 4.1351C21.5391 3.76003 21.0304 3.54932 20.5 3.54932ZM15.5 7.54932C15.5 8.1016 15.0523 8.54932 14.5 8.54932C13.9477 8.54932 13.5 8.1016 13.5 7.54932C13.5 6.99703 13.9477 6.54932 14.5 6.54932C15.0523 6.54932 15.5 6.99703 15.5 7.54932ZM19.5 7.54932C19.5 8.1016 19.0523 8.54932 18.5 8.54932C17.9477 8.54932 17.5 8.1016 17.5 7.54932C17.5 6.99703 17.9477 6.54932 18.5 6.54932C19.0523 6.54932 19.5 6.99703 19.5 7.54932ZM20.5 13.5493H4.5C3.96957 13.5493 3.46086 13.76 3.08579 14.1351C2.71071 14.5102 2.5 15.0189 2.5 15.5493V19.5493C2.5 20.0798 2.71071 20.5885 3.08579 20.9635C3.46086 21.3386 3.96957 21.5493 4.5 21.5493H20.5C21.0304 21.5493 21.5391 21.3386 21.9142 20.9635C22.2893 20.5885 22.5 20.0798 22.5 19.5493V15.5493C22.5 15.0189 22.2893 14.5102 21.9142 14.1351C21.5391 13.76 21.0304 13.5493 20.5 13.5493ZM15.5 17.5493C15.5 18.1016 15.0523 18.5493 14.5 18.5493C13.9477 18.5493 13.5 18.1016 13.5 17.5493C13.5 16.997 13.9477 16.5493 14.5 16.5493C15.0523 16.5493 15.5 16.997 15.5 17.5493ZM19.5 17.5493C19.5 18.1016 19.0523 18.5493 18.5 18.5493C17.9477 18.5493 17.5 18.1016 17.5 17.5493C17.5 16.997 17.9477 16.5493 18.5 16.5493C19.0523 16.5493 19.5 16.997 19.5 17.5493Z"
+                fill="#F53838" />
+            </svg>
+            <div class="statistic__text">
+              <b class="statistic__text-num">50+</b>
+              <span class="statistic__text-title">Servers</span>
+            </div>
+          </div>
+          <!-- /.statistic__item -->
         </div>
       </div>
-      <div class="statistic__item">
-        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20.5 3.54932H4.5C3.96957 3.54932 3.46086 3.76003 3.08579 4.1351C2.71071 4.51018 2.5 5.01888 2.5 5.54932V9.54932C2.5 10.0797 2.71071 10.5885 3.08579 10.9635C3.46086 11.3386 3.96957 11.5493 4.5 11.5493H20.5C21.0304 11.5493 21.5391 11.3386 21.9142 10.9635C22.2893 10.5885 22.5 10.0797 22.5 9.54932V5.54932C22.5 5.01888 22.2893 4.51018 21.9142 4.1351C21.5391 3.76003 21.0304 3.54932 20.5 3.54932ZM15.5 7.54932C15.5 8.1016 15.0523 8.54932 14.5 8.54932C13.9477 8.54932 13.5 8.1016 13.5 7.54932C13.5 6.99703 13.9477 6.54932 14.5 6.54932C15.0523 6.54932 15.5 6.99703 15.5 7.54932ZM19.5 7.54932C19.5 8.1016 19.0523 8.54932 18.5 8.54932C17.9477 8.54932 17.5 8.1016 17.5 7.54932C17.5 6.99703 17.9477 6.54932 18.5 6.54932C19.0523 6.54932 19.5 6.99703 19.5 7.54932ZM20.5 13.5493H4.5C3.96957 13.5493 3.46086 13.76 3.08579 14.1351C2.71071 14.5102 2.5 15.0189 2.5 15.5493V19.5493C2.5 20.0798 2.71071 20.5885 3.08579 20.9635C3.46086 21.3386 3.96957 21.5493 4.5 21.5493H20.5C21.0304 21.5493 21.5391 21.3386 21.9142 20.9635C22.2893 20.5885 22.5 20.0798 22.5 19.5493V15.5493C22.5 15.0189 22.2893 14.5102 21.9142 14.1351C21.5391 13.76 21.0304 13.5493 20.5 13.5493ZM15.5 17.5493C15.5 18.1016 15.0523 18.5493 14.5 18.5493C13.9477 18.5493 13.5 18.1016 13.5 17.5493C13.5 16.997 13.9477 16.5493 14.5 16.5493C15.0523 16.5493 15.5 16.997 15.5 17.5493ZM19.5 17.5493C19.5 18.1016 19.0523 18.5493 18.5 18.5493C17.9477 18.5493 17.5 18.1016 17.5 17.5493C17.5 16.997 17.9477 16.5493 18.5 16.5493C19.0523 16.5493 19.5 16.997 19.5 17.5493Z" fill="#F53838"/>
-        </svg>
-        <div class="text">
-          <b>50+</b>
-          <span>Servers</span>
-        </div>
-      </div>
+      <!-- /.container -->
     </section>
 
     <section class="features">
-      <img src="img/img-2.svg" alt="">
-      <div class="features__text">
-        <h2 class="title">We Provide Many Features You Can Use</h2>
-        <p class="subtitle">You can explore the features that we provide with fun and have their own functions each feature.</p>
-        <ul>
-          <li>Powerfull online protection.</li>
-          <li>Internet without borders.</li>
-          <li>Supercharged VPN</li>
-          <li>No specific time limits.</li>
-        </ul>
+      <div class="container d-flex">
+        <img src="img/img-2.svg" alt="">
+        <div class="features__text">
+          <h2 class="title">We Provide Many Features You Can Use</h2>
+          <p class="subtitle">You can explore the features that we provide with fun and have their own functions each
+            feature.</p>
+          <ul>
+            <li>Powerfull online protection.</li>
+            <li>Internet without borders.</li>
+            <li>Supercharged VPN</li>
+            <li>No specific time limits.</li>
+          </ul>
+        </div>
       </div>
+      <!-- /.container -->
     </section>
 
     <section class="plan">
-      <h2 class="title">Choose Your Plan</h2>
-      <p class="subtitle">Let's choose the package that is best for you and explore it happily and cheerfully.</p>
-      <div class="plan-items">
-        <article class="plan__item">
-          <img src="img/plan-free.svg" alt="">
-          <h4>Free Plan</h4>
-          <ul>
-            <li>Unlimited Bandwitch</li>
-            <li>Encrypted Connection</li>
-            <li>No Traffic Logs</li>
-            <li>Works on All Devices</li>
-          </ul>
-          <p><b></b></p>
-          <button>Select</button>
-        </article>
-        <article class="plan__item">
-          <img src="img/plan-standard.svg" alt="">
-          <h4>Standard Plan</h4>
-          <ul>
-            <li>Unlimited Bandwitch</li>
-            <li>Encrypted Connection</li>
-            <li>Yes Traffic Logs</li>
-            <li>Works on All Devices</li>
-            <li>Connect Anyware</li>
-          </ul>
-          <p><b>$12</b> / mo</p>
-          <button>Select</button>
-        </article>
-        <article class="plan__item">
-          <img src="img/plan-premium.svg" alt="">
-          <h4>Premium Plan</h4>
-          <ul>
-            <li>Unlimited Bandwitch</li>
-            <li>Encrypted Connection</li>
-            <li>Yes Traffic Logs</li>
-            <li>Works on All Devices</li>
-            <li>Connect Anyware</li>
-            <li>Get New Features</li>
-          </ul>
-          <p><b>$12</b> / mo</p>
-          <button>Select</button>
-        </article>
+      <div class="container">
+        <h2 class="title text-center">Choose Your Plan</h2>
+        <p class="subtitle text-center">Let's choose the package that is best for you and explore it happily and cheerfully.</p>
+        <div class="plan-items">
+          <article class="plan__item">
+            <img src="img/plan-free.svg" alt="">
+            <h4>Free Plan</h4>
+            <ul>
+              <li>Unlimited Bandwitch</li>
+              <li>Encrypted Connection</li>
+              <li>No Traffic Logs</li>
+              <li>Works on All Devices</li>
+            </ul>
+            <p><b></b></p>
+            <button>Select</button>
+          </article>
+          <article class="plan__item">
+            <img src="img/plan-standard.svg" alt="">
+            <h4>Standard Plan</h4>
+            <ul>
+              <li>Unlimited Bandwitch</li>
+              <li>Encrypted Connection</li>
+              <li>Yes Traffic Logs</li>
+              <li>Works on All Devices</li>
+              <li>Connect Anyware</li>
+            </ul>
+            <p><b>$12</b> / mo</p>
+            <button>Select</button>
+          </article>
+          <article class="plan__item">
+            <img src="img/plan-premium.svg" alt="">
+            <h4>Premium Plan</h4>
+            <ul>
+              <li>Unlimited Bandwitch</li>
+              <li>Encrypted Connection</li>
+              <li>Yes Traffic Logs</li>
+              <li>Works on All Devices</li>
+              <li>Connect Anyware</li>
+              <li>Get New Features</li>
+            </ul>
+            <p><b>$12</b> / mo</p>
+            <button>Select</button>
+          </article>
+        </div>
       </div>
+      <!-- /.container -->
     </section>
 
     <section class="network">
-      <h2 class="title">Huge Global Network of Fast VPN</h2>
-      <p class="subtitle">See <b>LaslesVPN</b> everywhere to make it easier for you when you move locations.</p>
+      <div class="container">
+        <h2 class="title text-center">Huge Global Network of Fast VPN</h2>
+      <p class="subtitle text-center">See <b>LaslesVPN</b> everywhere to make it easier for you when you move locations.</p>
       <img src="img/map-global.jpg" alt="The map of global network">
       <div class="network-partners">
 
       </div>
+      </div>
+      <!-- /.container -->
     </section>
 
     <section class="testimonials">
-      <h2 class="title">Trusted by Thousands of Happy Customer</h2>
-      <p class="subtitle">These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</p>
+      <div class="container">
+        <h2 class="title text-center">Trusted by Thousands of Happy Customer</h2>
+      <p class="subtitle text-center">These are the stories of our customers who have joined us with great pleasure when using this
+        crazy feature.</p>
       <div class="testimonials__wrapper">
         <div class="testimonial__item testimonial">
           <div class="tetimonial__client-info">
@@ -163,12 +195,15 @@
             <span class="tetimonial__client-location">Warsaw, Poland</span>
             <span class="tetimonial__client-rating">4.5
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.1891 5.41802L9.22187 4.84146L7.44844 1.24615C7.4 1.14771 7.32031 1.06802 7.22187 1.01959C6.975 0.897711 6.675 0.999273 6.55156 1.24615L4.77812 4.84146L0.810936 5.41802C0.701561 5.43365 0.601561 5.48521 0.524999 5.56334C0.432439 5.65847 0.381434 5.78646 0.383192 5.91918C0.38495 6.0519 0.439327 6.1785 0.534374 6.27115L3.40469 9.06959L2.72656 13.0211C2.71066 13.1131 2.72083 13.2076 2.75592 13.294C2.79102 13.3805 2.84963 13.4554 2.92511 13.5102C3.00059 13.565 3.08992 13.5976 3.18297 13.6042C3.27602 13.6108 3.36907 13.5913 3.45156 13.5477L7 11.6821L10.5484 13.5477C10.6453 13.5993 10.7578 13.6165 10.8656 13.5977C11.1375 13.5508 11.3203 13.293 11.2734 13.0211L10.5953 9.06959L13.4656 6.27115C13.5437 6.19459 13.5953 6.09459 13.6109 5.98521C13.6531 5.71177 13.4625 5.45865 13.1891 5.41802Z" fill="#FEA250"/>
+                <path
+                  d="M13.1891 5.41802L9.22187 4.84146L7.44844 1.24615C7.4 1.14771 7.32031 1.06802 7.22187 1.01959C6.975 0.897711 6.675 0.999273 6.55156 1.24615L4.77812 4.84146L0.810936 5.41802C0.701561 5.43365 0.601561 5.48521 0.524999 5.56334C0.432439 5.65847 0.381434 5.78646 0.383192 5.91918C0.38495 6.0519 0.439327 6.1785 0.534374 6.27115L3.40469 9.06959L2.72656 13.0211C2.71066 13.1131 2.72083 13.2076 2.75592 13.294C2.79102 13.3805 2.84963 13.4554 2.92511 13.5102C3.00059 13.565 3.08992 13.5976 3.18297 13.6042C3.27602 13.6108 3.36907 13.5913 3.45156 13.5477L7 11.6821L10.5484 13.5477C10.6453 13.5993 10.7578 13.6165 10.8656 13.5977C11.1375 13.5508 11.3203 13.293 11.2734 13.0211L10.5953 9.06959L13.4656 6.27115C13.5437 6.19459 13.5953 6.09459 13.6109 5.98521C13.6531 5.71177 13.4625 5.45865 13.1891 5.41802Z"
+                  fill="#FEA250" />
               </svg>
             </span>
           </div>
           <p class="tetimonial__client-comment">
-            “Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.
+            “Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have
+            been no problems. LaslesVPN always the best”.
           </p>
         </div>
         <div class="testimonial__item testimonial">
@@ -178,7 +213,9 @@
             <span class="tetimonial__client-location">Shanxi, China</span>
             <span class="tetimonial__client-rating">4.5
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.1891 5.41802L9.22187 4.84146L7.44844 1.24615C7.4 1.14771 7.32031 1.06802 7.22187 1.01959C6.975 0.897711 6.675 0.999273 6.55156 1.24615L4.77812 4.84146L0.810936 5.41802C0.701561 5.43365 0.601561 5.48521 0.524999 5.56334C0.432439 5.65847 0.381434 5.78646 0.383192 5.91918C0.38495 6.0519 0.439327 6.1785 0.534374 6.27115L3.40469 9.06959L2.72656 13.0211C2.71066 13.1131 2.72083 13.2076 2.75592 13.294C2.79102 13.3805 2.84963 13.4554 2.92511 13.5102C3.00059 13.565 3.08992 13.5976 3.18297 13.6042C3.27602 13.6108 3.36907 13.5913 3.45156 13.5477L7 11.6821L10.5484 13.5477C10.6453 13.5993 10.7578 13.6165 10.8656 13.5977C11.1375 13.5508 11.3203 13.293 11.2734 13.0211L10.5953 9.06959L13.4656 6.27115C13.5437 6.19459 13.5953 6.09459 13.6109 5.98521C13.6531 5.71177 13.4625 5.45865 13.1891 5.41802Z" fill="#FEA250"/>
+                <path
+                  d="M13.1891 5.41802L9.22187 4.84146L7.44844 1.24615C7.4 1.14771 7.32031 1.06802 7.22187 1.01959C6.975 0.897711 6.675 0.999273 6.55156 1.24615L4.77812 4.84146L0.810936 5.41802C0.701561 5.43365 0.601561 5.48521 0.524999 5.56334C0.432439 5.65847 0.381434 5.78646 0.383192 5.91918C0.38495 6.0519 0.439327 6.1785 0.534374 6.27115L3.40469 9.06959L2.72656 13.0211C2.71066 13.1131 2.72083 13.2076 2.75592 13.294C2.79102 13.3805 2.84963 13.4554 2.92511 13.5102C3.00059 13.565 3.08992 13.5976 3.18297 13.6042C3.27602 13.6108 3.36907 13.5913 3.45156 13.5477L7 11.6821L10.5484 13.5477C10.6453 13.5993 10.7578 13.6165 10.8656 13.5977C11.1375 13.5508 11.3203 13.293 11.2734 13.0211L10.5953 9.06959L13.4656 6.27115C13.5437 6.19459 13.5953 6.09459 13.6109 5.98521C13.6531 5.71177 13.4625 5.45865 13.1891 5.41802Z"
+                  fill="#FEA250" />
               </svg>
             </span>
           </div>
@@ -193,15 +230,20 @@
             <span class="tetimonial__client-location">Seoul, South Korea</span>
             <span class="tetimonial__client-rating">4.5
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.1891 5.41802L9.22187 4.84146L7.44844 1.24615C7.4 1.14771 7.32031 1.06802 7.22187 1.01959C6.975 0.897711 6.675 0.999273 6.55156 1.24615L4.77812 4.84146L0.810936 5.41802C0.701561 5.43365 0.601561 5.48521 0.524999 5.56334C0.432439 5.65847 0.381434 5.78646 0.383192 5.91918C0.38495 6.0519 0.439327 6.1785 0.534374 6.27115L3.40469 9.06959L2.72656 13.0211C2.71066 13.1131 2.72083 13.2076 2.75592 13.294C2.79102 13.3805 2.84963 13.4554 2.92511 13.5102C3.00059 13.565 3.08992 13.5976 3.18297 13.6042C3.27602 13.6108 3.36907 13.5913 3.45156 13.5477L7 11.6821L10.5484 13.5477C10.6453 13.5993 10.7578 13.6165 10.8656 13.5977C11.1375 13.5508 11.3203 13.293 11.2734 13.0211L10.5953 9.06959L13.4656 6.27115C13.5437 6.19459 13.5953 6.09459 13.6109 5.98521C13.6531 5.71177 13.4625 5.45865 13.1891 5.41802Z" fill="#FEA250"/>
+                <path
+                  d="M13.1891 5.41802L9.22187 4.84146L7.44844 1.24615C7.4 1.14771 7.32031 1.06802 7.22187 1.01959C6.975 0.897711 6.675 0.999273 6.55156 1.24615L4.77812 4.84146L0.810936 5.41802C0.701561 5.43365 0.601561 5.48521 0.524999 5.56334C0.432439 5.65847 0.381434 5.78646 0.383192 5.91918C0.38495 6.0519 0.439327 6.1785 0.534374 6.27115L3.40469 9.06959L2.72656 13.0211C2.71066 13.1131 2.72083 13.2076 2.75592 13.294C2.79102 13.3805 2.84963 13.4554 2.92511 13.5102C3.00059 13.565 3.08992 13.5976 3.18297 13.6042C3.27602 13.6108 3.36907 13.5913 3.45156 13.5477L7 11.6821L10.5484 13.5477C10.6453 13.5993 10.7578 13.6165 10.8656 13.5977C11.1375 13.5508 11.3203 13.293 11.2734 13.0211L10.5953 9.06959L13.4656 6.27115C13.5437 6.19459 13.5953 6.09459 13.6109 5.98521C13.6531 5.71177 13.4625 5.45865 13.1891 5.41802Z"
+                  fill="#FEA250" />
               </svg>
             </span>
           </div>
           <p class="tetimonial__client-comment">
-            “This is very unusual for my business that currently requires a virtual private network that has high security.”.
+            “This is very unusual for my business that currently requires a virtual private network that has high
+            security.”.
           </p>
         </div>
       </div>
+      </div>
+      <!-- /.container -->
     </section>
 
     <section class="subscribe">
@@ -218,10 +260,6 @@
       <a href=""><img src="" alt=""></a>
       <p><b>LaslesVPN</b> is a private virtual network that has unique features and has high security.</p>
       <div class="socials">
-        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M17.4 0.580566C8.12148 0.580566 0.599976 8.10207 0.599976 17.3806C0.599976 26.6591 8.12148 34.1806 17.4 34.1806C26.6785 34.1806 34.2 26.6591 34.2 17.3806C34.2 8.10207 26.6785 0.580566 17.4 0.580566ZM24.2337 14.3426C24.2407 14.4861 24.2425 14.6296 24.2425 14.7696C24.2425 19.1446 20.9157 24.1863 14.8292 24.1863C13.0307 24.1893 11.2697 23.6728 9.75773 22.6988C10.015 22.7303 10.2792 22.7426 10.547 22.7426C12.0975 22.7426 13.5237 22.2158 14.656 21.3268C13.966 21.3133 13.2974 21.0848 12.7434 20.6732C12.1894 20.2617 11.7777 19.6875 11.5655 19.0308C12.061 19.125 12.5715 19.1053 13.0582 18.9731C12.3093 18.8216 11.6358 18.4158 11.152 17.8245C10.6681 17.2331 10.4037 16.4926 10.4035 15.7286V15.6883C10.8497 15.9351 11.3607 16.0856 11.9032 16.1031C11.2011 15.6357 10.7041 14.9177 10.5138 14.0961C10.3235 13.2744 10.4543 12.411 10.8795 11.6826C11.7106 12.7046 12.7472 13.5406 13.922 14.1366C15.0968 14.7326 16.3836 15.0752 17.6992 15.1423C17.532 14.4324 17.604 13.687 17.904 13.0222C18.204 12.3574 18.7153 11.8103 19.3584 11.466C20.0014 11.1218 20.7402 10.9996 21.4598 11.1185C22.1794 11.2374 22.8396 11.5907 23.3377 12.1236C24.0783 11.9771 24.7884 11.7054 25.4377 11.3203C25.1909 12.0871 24.6742 12.7381 23.9835 13.1526C24.6395 13.0736 25.28 12.8972 25.884 12.6293C25.4403 13.2941 24.8815 13.8743 24.2337 14.3426Z" fill="#F53838"/>
-        </svg>
-
 
       </div>
       <p class="copyright">&copy;2020LaslesVPN</p>

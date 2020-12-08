@@ -8,16 +8,157 @@
   margin: 0 auto;
 }
 
-.header {
+.d-flex {
   display: flex;
 }
+
+.text-center {
+  text-align: center;
+}
+
+.button {
+  background: #F53838;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: #FFFFFF;
+  padding: 17px 77px;
+  outline: none;
+  border: none;
+}
+
+/* Global */
+.title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  color: #0B132A;
+}
+
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  margin-bottom: 90px;
+}
+
 .navigation {
   display: flex;
 }
 
 .menu-list {
-
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
+
+.menu-list__item {
+  margin-right: 40px;
+}
+
+.menu-list__item:last-child {
+  margin-right: 0;
+}
+
+.menu-list__link {
+  text-decoration: none;
+  font-size: 16px;
+  color: #4F5665;
+}
+
+.nav-buttons {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.login {
+  color: #0B132A;
+  outline: none;
+  border: none;
+  background: none;
+  margin-right: 20px;
+}
+
+.logout {
+  color: #F53855;
+  background: white;
+  padding: 13px 45px;
+  outline: none;
+  border: 1px solid #F53855;
+  border-radius: 25px;
+  margin-right: 30px;
+}
+
+/* Offer */
+.offer {
+  margin-bottom: 90px;
+}
+
+.offer__title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 70px;
+  color: #0B132A;
+  padding: 0;
+  margin: 24px 0 0px;
+}
+
+.offer__subtitle {
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
+  margin: 20px 0px 50px;
+}
+
+
+/* Statistic */
+.statistic{
+  margin-bottom: 100px;
+}
+
+.statistic__wrapper {
+  justify-content: space-between;
+  padding: 72px 91px;
+  border-radius: 10px;
+  box-shadow: 0px 27px 114px -84px rgba(13, 16, 37, 0.6);
+}
+
+.statistic__item-icon {
+  background: #FFECEC;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.statistic__item {
+  display: flex;
+}
+
+.statistic__text {
+  margin-left: 36px;
+  flex-direction: column;
+}
+
+.statistic__text-num {
+  display: block;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #0B132A;
+}
+
+.statistic__text-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #4F5665;
+}
+
 
 /* Plan */
 
