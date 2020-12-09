@@ -66,14 +66,30 @@
   margin-bottom: 90px;
 }
 
+.headear__link {
+  flex-grow: 1;
+}
+
+/* mobile-menu */
+
 .navigation {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.mobile-menu {
+  border: none;
+  background: transparent;
+  outline: #F53838;
+  padding: 10px;
 }
 
 .menu-list {
   list-style: none;
   display: flex;
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
 }
 
@@ -93,11 +109,13 @@
 
 .menu-list__link:hover {
   color: #F53838;
+  transform: scale(1.2);
 }
 
 .nav-buttons {
   font-size: 16px;
   font-weight: 500;
+  padding: 0;
 }
 
 .signin {
@@ -213,7 +231,7 @@
   line-height: 30px;
   color: #4F5665;
   margin-top: 5px;
-    display: inline-block;
+  display: inline-block;
 }
 
 /*---------- Features ----------*/
@@ -575,7 +593,6 @@
 
 .footer__wrapp {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -625,7 +642,7 @@
 }
 
 .footer__copyright {
-  margin-top: 30px;
+  margin-top: 3gi0px;
   color: #AFB5C0;
 }
 
